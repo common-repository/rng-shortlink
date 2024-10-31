@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2018, 5:54:51 PM
+    Author     : asabagh
+*/
+
+.shl-click-view-table{
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.shl-click-view-table tr td {
+    text-align: center;
+    padding: 10px 5px;
+}
+.shl-click-view-table tr td a{
+    text-decoration: none;
+}
+.shl-click-view-table tr:nth-child(2n){
+    background: #f5f5f5;
+}
+.shl-click-view-table thead tr{
+    background: #36304a;
+    color: white;
+}
+.shl-click-view-table thead tr th{
+    padding: 10px 5px;
+}
+.rng-disable{
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.wrap {
+    position: relative;
+}
+.shl-preloader {
+    background: rgba(204, 204, 204, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+.shl-spinner {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #7e7e7e; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.shl-pagination-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    justify-content: center;
+    direction: ltr;
+}
+.shl-pagination-list li a{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+}
+.shl-pagination-list li a.current{
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.admin-seprator-line {
+    display: inline-block;
+    height: 3px;
+    width: 100px;
+    background: #d8d8d8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 10px auto;
+}
